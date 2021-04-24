@@ -57,52 +57,106 @@
           </div>
       </div>
 
+
     <div class="container">
-        <h1>CONTACT</h1>
-    </div>
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+      <p class="text-center w-responsive mx-auto mb-5">Do you have any questions for us? Please feel free to contact us with the form below. We will respond within 24-48 hours.</p>
 
-
-
-
-    <footer class="bg-light text-center text-white">
-        <div class="container p-4 pb-0">
-          <section class="mb-4">
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="#!"
-              role="button"
-              ><i class="fa fa-facebook-f"></i
-            ></a>
-      
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #55acee;"
-              href="#!"
-              role="button"
-              ><i class="fa fa-twitter"></i
-            ></a>
-      
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="#!"
-              role="button"
-              ><i class="fa fa-instagram"></i
-            ></a>
-      
-          </section>
+      <div class="row row-content">
+        <div class="col-md-9 mb-md-0 mb-5 pb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary">Send</a>
+            </div>
+            <div class="status"></div>
         </div>
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-map-marker fa-2x"></i>
+                    <p>1 S. Penn Square, Philadelphia, PA 19102</p>
+                </li>
+
+                <li><i class="fa fa-phone fa-2x"></i>
+                    <p>+1 (555) 123-4567</p>
+                </li>
+
+                <li><i class="fa fa-envelope fa-2x"></i>
+                    <p>contact@galaxybookclub.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
       
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <footer class="bg-light text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="d-flex justify-content-center align-self-center">          
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #ac2bac;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+        <div class="d-flex justify-content-center align-self-center">
           © 2020 Copyright: A Reader's Guide To The Galaxy
         </div>
-      </footer>
+      </div>
+  </footer>
+
+
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 
 </body>
 
